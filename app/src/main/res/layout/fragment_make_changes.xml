@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DB Changes Count  "
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15ssp"/>
+
+        <TextView
+            android:id="@+id/tv_db_changes_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15ssp"/>
+
+    </LinearLayout>
+
+     <LinearLayout
+         android:id="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:layout_below="@+id/ll_1"
+         android:padding="@dimen/_10sdp"
+         android:gravity="center">
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="DB Version Number  "
+             android:textStyle="bold"
+             android:textColor="@color/black"
+             android:textSize="@dimen/_15ssp"/>
+
+         <TextView
+             android:id="@+id/tv_db_version"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="0"
+             android:textStyle="bold"
+             android:textColor="@color/black"
+             android:textSize="@dimen/_15ssp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll2"
+        android:padding="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Last Server Update     "
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15ssp"/>
+
+        <TextView
+            android:id="@+id/tv_last_server_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Apr 20, 2021 at 3:53:18 PM"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15ssp"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/et_update1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/_16ssp"
+        android:layout_below="@+id/ll_3"
+        android:text="@string/update1"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:textColor="@color/submit_button_color"/>
+
+    <TextView
+        android:id="@+id/et_update2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/_16ssp"
+        android:layout_below="@+id/et_update1"
+        android:text="@string/update2"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:textColor="@color/submit_button_color"/>
+
+
+     <TextView
+        android:id="@+id/start_over"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/_16ssp"
+        android:layout_below="@+id/et_update2"
+        android:text="@string/start_over"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:textColor="@color/submit_button_color"/>
+
+    <TextView
+        android:id="@+id/check_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/_16ssp"
+        android:layout_below="@+id/start_over"
+        android:text="@string/check_update"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:textColor="@color/submit_button_color"/>
+
+        <ProgressBar
+            android:id="@+id/prog_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:visibility="gone"
+            android:layout_centerInParent="true"/>
+
+</RelativeLayout>
+
+</layout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.WelcomeActivity">
+
+        <EditText
+            android:id="@+id/et_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/et_background"
+            android:layout_marginTop="@dimen/_200sdp"
+            android:layout_centerHorizontal="true"
+            android:hint="Code"
+            android:textSize="@dimen/_12ssp"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp"/>
+
+        <TextView
+            android:id="@+id/et_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/_16ssp"
+            android:layout_below="@+id/et_code"
+            android:text="@string/submit"
+            android:layout_marginTop="@dimen/_120sdp"
+            android:textColor="@color/submit_button_color"/>
+
+
+</RelativeLayout>
